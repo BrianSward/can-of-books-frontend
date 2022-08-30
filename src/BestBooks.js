@@ -35,7 +35,6 @@ class BestBooks extends React.Component {
   }
 
   createNewBook = async (bookInfo) => {
-    console.log(bookInfo);
     try {
       let response = await axios.post(`${process.env.REACT_APP_SERVER}/books`, bookInfo);
       let newBook = response.data;
@@ -55,6 +54,19 @@ class BestBooks extends React.Component {
       status: event.target.formStatus.checked,
     })
   }
+
+  deleteBook = async (bookToDelete) => {
+    try {
+      let response = await axios.delete(`${process.env.REACT_APP_SERVER}/books/${bookToDelete._id}`);
+      console.log(response.status);
+      let filteredBooks = this.state.books.filter( book => {
+        return book._id !== bookToDelete._id;
+      });
+      this.setState({ books: filteredBooks });
+    } catch (error) {
+      console.log('error deleting book ', error.response);
+    }
+  }
   
   componentDidMount() {
     this.getBooks();
@@ -73,6 +85,7 @@ class BestBooks extends React.Component {
             {book.title}
           </h3>
           <p>{book.description}</p>
+          <button onClick={() => this.deleteBook(book)}>Delete</button>
         </Carousel.Caption>
       </Carousel.Item>
     ))
@@ -90,7 +103,9 @@ class BestBooks extends React.Component {
           ) : (
             <h3>No Books Found :(</h3>
             )}
-        <BookFormModal handleSubmit={this.handleSubmit} show={this.state.showModal} open={this.openPopUp}
+        <BookFormModal handleSubmit={this.handleSubmit} 
+                       show={this.state.showModal}
+                       open={this.openPopUp}
                        close={this.closePopUp}/>
         <button onClick={this.openPopUp}>Add Book</button>
       </>
