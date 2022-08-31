@@ -95,3 +95,15 @@ Start time: 6:20pm EST (3:20pm PST)
 Finish time: 7:15pm EST (4:15pm PST)
 
 Actual time needed to complete: 55 Mins
+
+### lab 13
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 4:45pm EST (1:45pm PST)
+
+Finish time: 7:45pm EST (3:45pm PST)
+
+Actual time needed to complete: < 2 hours
+
+### just to add something
