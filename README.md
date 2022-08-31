@@ -40,7 +40,7 @@ Use resources provided by Codefellows like TA support, fellow students, and our 
 Cooperative
 
 Make a list of each person's strengths.
-Brian - math, logic 
+Brian - math, logic
 Xavier - jack of all trades, down to try anything once
 
 How can you best utilize these strengths in the development of your application?
@@ -75,3 +75,23 @@ Start time: 2:15
 Finish time: _____
 
 Actual time needed to complete: _____
+
+### Create: As a user, I'd like to add a new book to the shelf, so that I can update the list with my own recommendations
+
+Estimate of time needed to complete: 1 Hour 30 Mins
+
+Start time: 5:05pm EST (2:05pm PST)
+
+Finish time: 6:10pm EST (3:10pm PST)
+
+Actual time needed to complete: 1 Hour 5 Mins
+
+### Delete: As a user, I want to remove books from my list, so that only the most important books are on my shelf
+
+Estimate of time needed to complete: 1 Hour 30 Mins
+
+Start time: 6:20pm EST (3:20pm PST)
+
+Finish time: 7:15pm EST (4:15pm PST)
+
+Actual time needed to complete: 55 Mins
